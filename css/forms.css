@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/galaxy.jpg);
+}
+h1, h3, legend {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Molle', cursive;
+	font-size: 30px;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: #A3BEE5;
+}
+p {
+	margin-bottom: 0;
+	margin-top: 2rem;
+	/*margin: 2rem 0 0 0  (t.r.b.l.) top right bottom left*/
+}
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+}
+aside {
+	flex-basis: 33%;
+}
+p, [for="abtype"] {
+	margin-bottom: 0;
+	margin-top: 2rem;
+	/*margin: 2rem 0 0 0;*/
+}
+fieldset {
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	/*Is legend a block level element or in-line element? How to find out? Put a border on it.
+	border: 1px solid blue;*/
+	display: block; /*nothing happens*/
+}
+
+/*It's an in-line element because it doesn't go all the way across and it's as big as it's content. */
+/*What would happen if we turned our legend into a block level element?*/
+label {
+	/*Is label in-line or block level. Stick a border on it.*/
+display: block;
+padding-bottom: 0.3rem;
+}
+textarea {
+	height: 10rem;
+	padding: 1rem;
+}
+select {
+	font-size: 1rem;
+}
+button {
+	font-size: 1rem;
+	margin: 2rem 0;
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+button:hover {
+	background-color: white;
+	color: orange;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea, select /*Can also bee added to the p, up top..with a for="comment"*/{
+	/*in-line or block?*/
+	display: block; /*will allow you to add padding*/
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Ariel, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
